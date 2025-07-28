@@ -185,6 +185,12 @@ const Projects = () => {
                       DEMO
                     </motion.button>
                     
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
                     <motion.button
                       className="flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-transparent border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-dark-bg transition-all duration-300 text-sm font-cyber"
                       whileHover={{ scale: 1.05 }}
@@ -193,6 +199,7 @@ const Projects = () => {
                       <Github className="w-4 h-4" />
                       CODE
                     </motion.button>
+                    </a>
                     
                     <motion.button
                       className="py-2 px-4 bg-transparent border border-cyber-pink text-cyber-pink hover:bg-cyber-pink hover:text-dark-bg transition-all duration-300 text-sm font-cyber"
@@ -219,6 +226,12 @@ const Projects = () => {
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
         >
+          <a
+            href="https://github.com/cyberph3onix"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
+          >
           <motion.button
             className="px-8 py-3 bg-transparent border-2 border-cyber-green text-cyber-green font-cyber font-bold uppercase tracking-wider hover:bg-cyber-green hover:text-dark-bg transition-all duration-300 neon-border"
             whileHover={{ scale: 1.05 }}
@@ -226,6 +239,7 @@ const Projects = () => {
           >
             ACCESS_FULL_ARCHIVE
           </motion.button>
+          </a>
         </motion.div>
       </div>
     </section>

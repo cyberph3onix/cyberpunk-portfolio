@@ -102,7 +102,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2, duration: 1 }}
           >
-            &gt; FULL-STACK DEVELOPER
+            &gt; B.Tech CSE 2nd Year
           </motion.p>
           
           <motion.p
@@ -111,7 +111,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2.5, duration: 1 }}
           >
-            &gt; B.TECH ENGINEER
+            &gt; AI/ML & DevOpS Enthusiast
           </motion.p>
         </motion.div>
 
@@ -122,14 +122,24 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
+
+          <a href= "https://www.linkedin.com/in/shreshta-raaj-gupta"
+          target="_blank"
+          rel="noopener noreferrer">
+
+
           <motion.button
             className="px-8 py-3 bg-transparent border-2 border-cyber-blue text-cyber-blue font-cyber font-bold uppercase tracking-wider hover:bg-cyber-blue hover:text-dark-bg transition-all duration-300 neon-border"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-          >
-            INITIALIZE_PROJECTS
+            >
+            GITHUB_PROFILE
           </motion.button>
-          
+          </a>
+
+          <a href = "https://drive.google.com/file/d/1m_nmneR1WWsi0zXVky4oSY2SJg4BPQTA/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer">
           <motion.button
             className="px-8 py-3 bg-transparent border-2 border-cyber-pink text-cyber-pink font-cyber font-bold uppercase tracking-wider hover:bg-cyber-pink hover:text-dark-bg transition-all duration-300 neon-border"
             whileHover={{ scale: 1.05 }}
@@ -137,6 +147,7 @@ const Hero = () => {
           >
             DOWNLOAD_RESUME
           </motion.button>
+          </a>
         </motion.div>
 
         {/* Stats Display */}

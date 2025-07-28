@@ -11,8 +11,8 @@ const About = () => {
   ];
 
   const traits = [
-    { icon: Brain, label: 'AI Enjoyer', description: 'Love AI dawg!' },
-    { icon: Code, label: 'Certified Yapper', description: 'Gimme Tea' },
+    { icon: Brain, label: 'AI/ML', description: 'AI cant take my job' },
+    { icon: Code, label: 'DevOps', description: 'lemme deploy that shi' },
     { icon: Zap, label: 'Dangerous', description: 'Do Not Come Closer' },
     { icon: User, label: 'CHILL GUY', description: 'CAN DO ANYTHING TECH' },
   ];
@@ -93,7 +93,7 @@ const About = () => {
                 <ul>Love Cats</ul>
                 <ul>Hate people</ul>
                 <ul>Have an Immaculate music taste</ul>
-                <ul>Certified CSS hater (ion wanna allign shit)</ul>
+                <ul>Certified CSS hater (I hate alligning stuffs)</ul>
               </p>
 
               {/* Status Indicators */}
