@@ -133,7 +133,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             >
-            GITHUB_PROFILE
+            LINKEDIN_PROFILE
           </motion.button>
           </a>
 
