@@ -4,6 +4,24 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'text-cyber-blue',
+    'text-cyber-pink',
+    'text-cyber-green',
+    'text-cyber-yellow',
+    'bg-cyber-blue',
+    'bg-cyber-pink',
+    'bg-cyber-green',
+    'bg-cyber-yellow',
+    'from-cyber-blue',
+    'from-cyber-pink',
+    'from-cyber-green',
+    'from-cyber-yellow',
+    'to-cyber-blue',
+    'to-cyber-pink',
+    'to-cyber-green',
+    'to-cyber-yellow',
+  ],
   theme: {
     extend: {
       colors: {

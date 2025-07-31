@@ -55,12 +55,14 @@ const About = () => {
               <div className="relative mb-6">
                 <div className="w-32 h-32 mx-auto relative">
                   <div className="w-full h-full rounded-full border-4 border-cyber-blue overflow-hidden">
-                    {/* Replace with your actual image */}
-                    <div className="w-full h-full bg-gradient-to-br from-cyber-blue to-cyber-pink flex items-center justify-center text-4xl font-bold">
-                      no pic yet
-                    </div>
+                    <img
+                    src={`${import.meta.env.BASE_URL}profile.png`}
+                    alt="Profile"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+
                   </div>
-                  
+
                   {/* Rotating HUD Ring */}
                   <motion.div
                     className="absolute inset-0 border-2 border-cyber-green rounded-full"
@@ -123,27 +125,51 @@ const About = () => {
               <h4 className="text-xl font-cyber font-bold text-cyber-blue mb-6">
                 SKILL_METRICS
               </h4>
-              
-              {stats.map((stat, index) => (
-                <div key={index} className="mb-4">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm font-cyber text-gray-300">{stat.label}</span>
-                    <span className={`text-sm font-bold text-${stat.color}`}>{stat.value}%</span>
+
+              {stats.map((stat, index) => {
+                let textColor = '';
+                let barColor = '';
+
+                switch (stat.color) {
+                  case 'cyber-pink':
+                    textColor = 'text-cyber-pink';
+                    barColor = 'from-cyber-pink to-cyber-pink';
+                    break;
+                  case 'cyber-blue':
+                    textColor = 'text-cyber-blue';
+                    barColor = 'from-cyber-blue to-cyber-blue';
+                    break;
+                  case 'cyber-green':
+                    textColor = 'text-cyber-green';
+                    barColor = 'from-cyber-green to-cyber-green';
+                    break;
+                  case 'cyber-yellow':
+                    textColor = 'text-cyber-yellow';
+                    barColor = 'from-cyber-yellow to-cyber-yellow';
+                    break;
+                  default:
+                    textColor = 'text-white';
+                    barColor = 'from-white to-white';
+                }
+
+                return (
+                  <div key={index} className="mb-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm font-cyber text-gray-300">{stat.label}</span>
+                      <span className={`text-sm font-bold ${textColor}`}>{stat.value}%</span>
+                    </div>
+                    <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                      <motion.div
+                        className={`h-full bg-gradient-to-r ${barColor} rounded-full`}
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${stat.value}%` }}
+                        transition={{ duration: 1.5, delay: index * 0.2 }}
+                        viewport={{ once: true }}
+                      />
+                    </div>
                   </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                    <motion.div
-                      className={`h-full bg-gradient-to-r from-${stat.color} to-${stat.color} rounded-full`}
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${stat.value}%` }}
-                      transition={{ duration: 1.5, delay: index * 0.2 }}
-                      viewport={{ once: true }}
-                      style={{
-                        boxShadow: `0 0 10px var(--${stat.color})`,
-                      }}
-                    />
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </motion.div>
 
             {/* Traits Grid */}
