@@ -1,12 +1,37 @@
-# React + Vite
+# Cyberpunk Portfolio 👾
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro-futuristic portfolio website built using **React**, **TailwindCSS**, and **Framer Motion**.  
+This project is part of my self-learning journey to understand modern web development and how to use **Git & GitHub** for version control and deployment.
 
-Currently, two official plugins are available:
+## 🚧 What I'm Learning
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 💻 Git & GitHub workflows: cloning, pushing, committing, and collaboration basics
+- - 🌐 Hosting and deploying websites
+- 🧠 How React components work and how data flows between them
+- 🎨 How TailwindCSS handles responsive design and utility-based styling
+- 🎞️ Framer Motion for subtle animations
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ What I Did
+
+- Used an AI-generated boilerplate as a base
+- Customized UI elements, text, themes, and layout
+- Deployed and maintained the project using GitHub
+- Currently learning how to add more interactivity and features and slowly making the website better and better. 
+
+Note: I have filled the skills section with placeholders so the skill sections may not indicate the skills that i currently have, I'll fix it later
+
+## 🌟 Why This Project?
+
+Rather than doing basic projects, I chose to learn through building something fun, cool and something I can learn from.  
+I didn’t know React or Tailwind before this — I’m learning by doing. Every commit reflects progress in my understanding.
+
+## 🔗 Live Demo
+
+[View Portfolio](https://cyberph3onix.github.io/cyberpunk-portfolio)
+
+## 🤝 Contributions
+
+This was a solo learning project, but I’m open to feedback and collaboration!
+
+
